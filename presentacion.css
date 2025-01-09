@@ -17,13 +17,6 @@ background: linear-gradient(to right, #1d2c3e, #264873 );
 }
 
 #encabezado{
-    
-    
-    /* background-image: url('/img/4.png'); 
-    background-size: cover;
-    background-attachment: fixed; 
-    background-position: center; */
-    
  position: sticky;
  top:0;
  font-family: "Solway", serif;
@@ -88,10 +81,29 @@ transition: color 0.5s ease, background-color 0.5s ease;
 
 
 .lista a:hover{
-    background-color: aqua;
+    background-color: rgb(16, 138, 226);
     border-radius: 5px;
-    color:rgb(10, 188, 182);
+    color:rgb(5, 93, 90);
 }
+
+
+/* header responsive */
+
+@media(max-width:800px){
+
+.ul-listas{
+
+display:none;
+
+
+}
+
+
+}
+
+
+
+
 
 
 
@@ -103,32 +115,203 @@ width:50%;
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 0 auto;
+margin: 50px auto 0;
 
 }
 
 
 .subcontenedor-presentacion{
+    padding: 20px;
  background-color:#020517 ;
  border-radius: 7px;
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
+ overflow-x:hidden;
 
 
 }
 
+.imagen_p{
 
+margin-left:19px;
+
+}
 
 
 .contenido-textual-presentacion{
-
+    font-family: "Solway", serif;
+    font-weight: 800;
+    font-style: normal;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contenido-textual-presentacion h4{
+.contenido-textual-presentacion h2{
 
+font-family: "Righteous", serif;
+font-weight: 800;
+font-style: normal;
 color:white;
+font-size:3rem;
+font-weight: bold;
+}
+
+.nombre{
+
+    
+    color:rgb(16, 138, 226);
+    z-index:1000;
+/* color:rgb(5, 93, 90); */
+
+}
+
+.logo{
+width:100%;
+display:flex;
+justify-content: center;
+padding-bottom: 20px;
+
+}
+
+.red{
+color:white;
+font-size: 40px;
+margin-left:20px;
+transition: color 0.5s ease, transform 0.3s ease;
+}
+
+.red:hover{
+
+color:rgb(16, 138, 226);
+transform: translateY(-10px);
+}
+
+
+/* Sobre Mi */
+
+.sobre_mi{
+
+width:100%;
+margin-top: 40px;
+padding: 20px;
+background-color:#020517 ;
+font-family: "Solway", serif;
+font-weight: 800;
+font-style: normal;
+position:relative;
+}
+
+
+
+
+.contenido-sobre_mi{
+width:90%;
+height: 400px;
+margin: 50px auto 0;
+display: flex;
+justify-content: space-around;
+color:white;
+}
+
+.titulo-principal-sesion-2{
+
+font-size: 50px;
+
+}
+
+.titulo-principal-sesion-2::before{
+
+    content:"";
+    display:block;
+    position:absolute;
+    width:5px;
+    height: 30px;
+    top:28%;
+    left:7%;
+    border-radius: 5px;
+    background-color: rgb(16, 138, 226);
+    animation: color_sobre_mi 4s ease-in-out  infinite alternate both;
+    
+}
+
+
+@keyframes color_sobre_mi{
+
+0%{
+    background-color: rgb(16, 138, 226);
+
+}
+50%{
+    background-color: rgb(120, 155, 180);
+
+}
+50%{
+    background-color: rgb(9, 60, 96);
+
+}
+100%{
+    background-color: rgb(214, 219, 223);
+
+}
+
+}
+
+
+.listas-sobre_mi{
+
+    line-height: 1.5em;
 
 
 }
+
+
+.listas-sobre_mi li strong{
+color:rgb(16, 138, 226);
+
+
+}
+
+.info-datos{
+
+text-decoration:none;
+color: whitesmoke;
+
+
+}
+
+
+.listas-habilidades-blandas{
+line-height: 1.5em;
+
+    
+}
+
+
+
+
+/* Portafolio de programador */
+
+
+.portafolio{
+
+    font-family: "Solway", serif;
+    font-weight: 800;
+    font-style: normal;
+
+
+}
+
+
+.titulo-portafolio h3{
+
+color:rgb(16, 138, 226);
+font-size: xx-large;
+
+}
+
+
+
+
