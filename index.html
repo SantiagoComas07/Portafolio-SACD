@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="presentacion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Agu+Display&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lilita+One&family=Righteous&family=Sixtyfour&family=Solway:wght@300;400;500;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Russo+One&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
 <title>Document</title>
 </head>
@@ -20,8 +20,8 @@
                 <ul class="ul-listas">
                     <li class="lista"><a href="#">INICIO</a></li>
                     <li class="lista"><a href="#">SOBRE MI</a></li>
-                    <li class="lista"><a href="#">SKILLS</a></li>
-                    <li class="lista"><a href="#">CURRICULUM</a></li>
+                    <!-- <li class="lista"><a href="#">SKILLS</a></li>
+                    <li class="lista"><a href="#">CURRICULUM</a></li> -->
                     <li class="lista"><a href="#">PORTAFOLIO</a></li>
                     <li class="lista"><a href="#">CONTACTO</a></li>
                 </ul>
@@ -29,20 +29,22 @@
         </nav>
     </header>
 <main>
-    <section class="presentacion">
-        <div class="subcontenedor-presentacion">
-            <div class="imagen_p">
-                <img  src="/img/Santiago_p2.png" alt="Santiago Comas">
+    <section class="presentacion1">
+        <div class="img-red">
+            <figure class="contenedor-img-presentacion">
+                <img class="presentacion-img" src="/img/WhatsApp Image 2025-01-01 at 12.10.31 AM.jpeg" alt="Santiago">
+            </figure>
+            <div class="logo">
+                <a href="#"><i class="red bi bi-instagram"></i></a>
+                <a href="#"><i class="red bi bi-github"></i></a>
+                <a href="#"><i class="red bi bi-linkedin"></i></a>
             </div>
-            <article class="contenido-textual-presentacion">
-                <h2><span class="nombre">SANTIAGO </span>COMAS</h2>
-                <div class="logos">
-                    <a href="#"><i class=" red bi bi-instagram"></i></a>
-                    <a href="#"><i class=" red bi bi-github"></i></a>
-                    <a href="#"><i class=" red bi bi-linkedin"></i></a>
-                </div>
-            </article>
-        </div>  
+        </div>
+        <article class="contenido-textual-presentacion">
+            <h2 class="titulo-presentacion">Santiago Comas Durán</h2>
+            <p>Estudiante de Ingeniería de sistemas con conocimientos en Front-End, habilidades en el ámbito del desarrollo web, HTML, CSS y JavaScript, ademas de Git y GitHub. Destaca la creatividad, habilidad para trabajar en equipo, capacidad para encontrar soluciones de manera recursiva y resiliencia ante los desafíos. Comprometido en seguir creciendo y aprendiendo en el campo de la programación.</p>
+             <a class="comenzar" href="#">Comenzar</a>
+        </article>
     </section>
     <section class="sobre_mi">
         <article class="contenido-sobre_mi">
@@ -81,7 +83,6 @@
                 </div>
             </div>
         </article>
-        <div class="hobbies">
         </div>
         </div>  
     </section>
@@ -89,20 +90,55 @@
         <div class="titulo-portafolio">
             <h3>Portafolio</h3>
         </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-
+        <div class="subcontenedor-portafolio">
+            <div class="card">
+                <figure class="contenedor-img-portafolio">
+                    <img class="img-portafolio" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Proyecto_1">
+                </figure>
+                <article class="contenido-card">
+                    <h4 class="nombre-proyecto">Proyecto</h4>
+                    <p class="texto-proyecto">Descripcion breve del proyecto,habla sobre lo importante que es.</p>
+                    <a class="link-mas-info" href="#">more info</a>
+                </article>
+            </div>
+            <div class="card">
+                <figure class="contenedor-img-portafolio">
+                    <img class="img-portafolio" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Proyecto_1">
+                </figure>
+                <article class="contenido-card">
+                    <h4 class="nombre-proyecto">Proyecto</h4>
+                    <p  class="texto-proyecto">Descripcion breve del proyecto,habla sobre lo importante que es.</p>
+                    <a class="link-mas-info" href="#">more info</a>
+                </article>
+            </div>
+            <div class="card">
+                <figure class="contenedor-img-portafolio">
+                    <img class="img-portafolio" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Proyecto_1">
+                </figure>
+                <article class="contenido-card">
+                    <h4 class="nombre-proyecto">Proyecto</h4>
+                    <p class="texto-proyecto">Descripcion breve del proyecto,habla sobre lo importante que es.</p>
+                    <a class="link-mas-info" href="#">more info</a>
+                </article>
+            </div>
+        </div>   
     </section>
-
-
-</main>
-    
+    <section>
+        <div class="contenedor-contacto"> 
+            <h3>Contacto</h3>
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input id="" name="nombre" type="text" required>
+                <label for="telefono">numero celular</label>
+                <input id="" name="telefono" type="number" required>
+                <label for="correo">correo electronico</label>
+                <input id="" name="correo" type="email" required>
+            </form>
+        </div>
+    </section>
+</main> 
+<footer>
+    info
+</footer>
 </body>
 </html>
