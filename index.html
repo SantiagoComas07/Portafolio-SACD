@@ -123,17 +123,29 @@
             </div>
         </div>   
     </section>
-    <section>
-        <div class="contenedor-contacto"> 
-            <h3>Contacto</h3>
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input id="" name="nombre" type="text" required>
-                <label for="telefono">numero celular</label>
-                <input id="" name="telefono" type="number" required>
-                <label for="correo">correo electronico</label>
-                <input id="" name="correo" type="email" required>
-            </form>
+    <section class="contenedor-contacto">
+        <div class="contenedor-form"> 
+                <div class="contenedor-titulo-contacto">
+                       <h3 class="titulo-contacto">Formulario de contacto</h3>
+                </div>
+                <form class="formulario" action="">
+                    <div class="datos-requeridos">
+                        <label for="nombre">Nombre</label>
+                        <input id="" name="nombre" type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="datos-requeridos">
+                        <label for="telefono">Numero celular</label>
+                        <input id="" name="telefono" type="number" placeholder="Numero" required>
+                    </div>
+                    <div class="datos-requeridos">
+                        <label for="correo">Correo electronico</label>
+                       <input id="" name="correo" type="email" placeholder="Email"  required>
+                    </div>
+                    <div class="btn-contenedor">
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                  
+                </form>
         </div>
     </section>
 </main> 
