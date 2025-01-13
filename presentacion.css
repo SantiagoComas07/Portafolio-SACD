@@ -98,6 +98,7 @@ transition: color 0.5s ease, background-color 0.5s ease;
     font-size: xx-large; 
     border:0;
     background-color: transparent;
+    cursor:pointer;
      position:absolute;
     left: 80%;
     top:38px; 
@@ -121,12 +122,9 @@ transition: color 0.5s ease, background-color 0.5s ease;
 @media(max-width:830px){
     
 
-.ul-listas{
-    
+.contenedor-listas{   
     display:none;
-    
-        
-        
+         
 }
 
 .lista{
@@ -167,23 +165,42 @@ display: block;
 }
 
 
-.contenedor-listas{
-    width: 100%;
-    position:absolute;
-top:70px;
-left:0;
-margin-top: 0px;
-
-
-}
-
 .ul-listas{
+
 
     flex-direction: column;
     column-gap: 20px;
-    background-color: #a5b3b5;
+    background: #00020da5 ;
+    backdrop-filter: blur(10px);
+    padding:10px;
 
 }
+
+.ul-listas li a{
+padding-right: 10%;
+
+}
+
+
+#btn-cerrar:active{
+color:rgb(16, 138, 226) ;
+
+}
+
+
+
+.contenedor-listas{
+    width: 30%;
+    padding:10px;
+    position:absolute;
+    top:90px;
+    left: 70%;
+    margin-top: 0px;
+
+
+
+}
+
 
 
 #btn-cerrar{
@@ -200,14 +217,6 @@ margin-bottom:10px;
 
 
 }
-
-
-
-
-
-
-
-
 
 
 

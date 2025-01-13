@@ -4,13 +4,13 @@ let cerrar = document.querySelector("#btn-cerrar");
 
 
 abrir. addEventListener("click", ()=>{
-    console.log("Abrir")
+    console.log("Abrir");
     nav.classList.add("visible");
 
-})
+});
 
 cerrar. addEventListener("click", ()=>{
-    console.log("Cerrar")
+    console.log("Cerrar");
     nav.classList.remove("visible");
 
-})
+});
