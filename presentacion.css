@@ -89,19 +89,121 @@ transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 
+/* Icono hamburguesa - menu desplegrable */
+
+
+#btn-abrir{
+    display:none;
+    color:rgb(16, 138, 226);
+    font-size: xx-large; 
+    border:0;
+    background-color: transparent;
+     position:absolute;
+    left: 80%;
+    top:38px; 
+    z-index:200;
+    
+    
+    }
+    
+    
+    #btn-cerrar{
+    display:none;
+    border:0;
+    background-color: transparent;
+    }
+    
+
+
+
 /* header responsive */
 
-@media(max-width:800px){
+@media(max-width:830px){
+    
+
+.ul-listas{
+    
+    display:none;
+    
+        
+        
+}
+
+.lista{
+
+font-size: x-small ;
+z-index: 1000;
+
+
+}
+
+
+/* Menu responsive */
+
+
+
+#navegador{
+
+
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index:1000;
+
+}
+
+
+
+#btn-abrir{
+
+display:block;
+z-index:1200;
+
+}
+
+
+.contenedor-listas.visible{
+display: block;
+}
+
+
+.contenedor-listas{
+    width: 100%;
+    position:absolute;
+top:70px;
+left:0;
+margin-top: 0px;
+
+
+}
 
 .ul-listas{
 
-display:none;
+    flex-direction: column;
+    column-gap: 20px;
+    background-color: #a5b3b5;
 
+}
+
+
+#btn-cerrar{
+    display:block;
+}
+
+#btn-cerrar{
+
+color: white;
+font-size: xx-large;
+margin-bottom:10px;
 
 }
 
 
 }
+
+
+
+
 
 
 
@@ -239,6 +341,7 @@ padding: 20px;
 background-color:#00020d ;
 font-weight: 800;
 position:relative;
+box-shadow: 0px 7px 5px #010b1b, 0px -7px 5px #010b1b ;
 z-index: 500;
 }
 
@@ -251,8 +354,15 @@ margin: 50px auto 0;
 display: flex;
 justify-content: space-around;
 color:white;
+}
+
+
+.contenido-sobre_mi p{
+font-size: large;
+line-height: 30px;
 
 }
+
 
 .titulo-principal-sesion-2{
 
@@ -289,6 +399,55 @@ line-height: 1.5em;
 
     
 }
+
+
+
+/* Skills */
+
+
+.sesion-skills{
+
+width: 100%;
+background-color: rgb(16, 138, 226);
+box-shadow: 0px 5px 7px  rgb(16, 138, 226);
+}
+
+
+.skills{
+
+padding:30px;
+
+}
+
+.contenedor-titulo-skills{
+
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.titulo-skills{
+
+color:#010b1b;
+
+}
+
+
+.contenedor-skills{
+
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+color:whitesmoke;
+}
+
+
+
+
+
 
 
 
@@ -418,7 +577,7 @@ align-items: center;
 }
 
 .contenedor-form{
-width: 40%;
+width: 30%;
 background-color: #eae9ed;
 border-radius: 10px;
 display:flex;
@@ -484,8 +643,8 @@ text-align: center;
 
 
 .btn{
-width:20%;
-border-radius:30px;
+width:40%;
+border-radius:10px;
 border:0px;
 padding:  10px;
 margin:12px 10px;
