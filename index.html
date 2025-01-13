@@ -19,19 +19,19 @@
             <button id="btn-abrir"><i class="bi bi-list"></i></button>
             <div class="contenedor-listas">
                 <ul class="ul-listas">
-                    <li class="lista"><a href="#">INICIO</a></li>
-                    <li class="lista"><a href="#">SOBRE MI</a></li>
-                    <li class="lista"><a href="#">SKILLS</a></li>
+                    <li class="lista"><a href="#inicio">INICIO</a></li>
+                    <li class="lista"><a href="#sobre-mi">SOBRE MI</a></li>
+                    <li class="lista"><a href="#skill">SKILLS</a></li>
               <!--  <li class="lista"><a href="#">CURRICULUM</a></li> -->
-                    <li class="lista"><a href="#">PORTAFOLIO</a></li>
-                    <li class="lista"><a href="#">CONTACTO</a></li>
+                    <li class="lista"><a href="#portafolio">PORTAFOLIO</a></li>
+                    <li class="lista"><a href="#contactar">CONTACTO</a></li>
                     <button id="btn-cerrar"><i class="bi bi-x-square"></i></button>
                 </ul>
             </div>
         </nav>
     </header>
 <main>
-    <section class="presentacion1">
+    <section id="inicio" class="presentacion1">
         <div class="img-red">
             <figure class="contenedor-img-presentacion">
                 <img class="presentacion-img" src="/img/WhatsApp Image 2025-01-01 at 12.10.31 AM.jpeg" alt="Santiago">
@@ -48,7 +48,7 @@
              <a class="comenzar" href="#">Comenzar</a>
         </article>
     </section>
-    <section class="sobre_mi">
+    <section id="sobre-mi" class="sobre_mi">
         <article class="contenido-sobre_mi">
             <div class="contenedor-texto-sobre_mi">
                 <h3 class="titulo-principal-sesion-2"><span class="nombre">Sobre</span> mí</h3>
@@ -59,35 +59,38 @@
                      <p>Praesentium, repellat qui? Culpa dicta eius quia consequuntur ducimus perferendis. <br> 
                      Quasi voluptatibus cumque harum, incidunt rerum neque quaerat nesciunt?</p>
             </div>
-            <div class="datos">
-                <div class="titulo-datos">
-                    <h3><span class="nombre">Datos</span> personales</h3>
+                <div class="datos">
+                    <div class="subcaja-datos">
+                        <div class="titulo-datos">
+                            <h3><span class="nombre">Datos</span> personales</h3>
+                        </div>
+                        <div>
+                            <ul class="listas-sobre_mi">
+                                <li><strong>Email</strong>  &nbsp &nbsp &nbsp &nbsp   santiagocomas07d@gmail.com</li>
+                                <li><strong>Ciudad</strong> &nbsp  &nbsp &nbsp Barranquilla</li>
+                                <li><strong>Estudios</strong> &nbsp &nbsp <a class="info-datos" href="#">Click aqui</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subcaja-datos">
+                        <div class="titulo-datos">
+                            <h3><span class="nombre">Habilidades</span> Blandas</h3>
+                         </div>
+                        <ul class="listas-habilidades-blandas">
+                                <li><strong>Creatividad</strong> </li>
+                                <li><strong>Agilidad</strong></li>
+                                <li><strong>Competencias digitales</strong> </li>
+                                <li><strong>Liderazgo</strong></li>
+                                <li><strong>trabajo en equipo</strong></li>
+                                <li><strong>Adaptabilidad</strong></li>
+                                <li><strong>Recursividad</strong></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <ul class="listas-sobre_mi">
-                        <li><strong>Email</strong>  &nbsp &nbsp &nbsp &nbsp   santiagocomas07d@gmail.com</li>
-                        <li><strong>Ciudad</strong> &nbsp  &nbsp &nbsp Barranquilla</li>
-                        <li><strong>Estudios</strong> &nbsp &nbsp <a class="info-datos" href="#">Click aqui</a></li>
-                    </ul>
-                <div class="titulo-datos">
-                    <h3><span class="nombre">Habilidades</span> Blandas</h3>
-                </div>
-                  <ul class="listas-habilidades-blandas">
-                        <li><strong>Creatividad</strong> </li>
-                        <li><strong>Agilidad</strong></li>
-                        <li><strong>Competencias digitales</strong> </li>
-                        <li><strong>Liderazgo</strong></li>
-                        <li><strong>trabajo en equipo</strong></li>
-                        <li><strong>Adaptabilidad</strong></li>
-                        <li><strong>Recursividad</strong></li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-        </div>
-        </div>  
+        </article> 
     </section>
-    <section class="sesion-skills">
+    <section id="skill" class="sesion-skills">
         <div class="skills">
             <div class="contenedor-titulo-skills">
                 <h2 class="titulo-skills">Skills</h2>
@@ -126,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="portafolio">
+    <section id="portafolio" class="portafolio">
         <div class="titulo-portafolio">
             <h3>Portafolio</h3>
         </div>
@@ -163,7 +166,10 @@
             </div>
         </div>   
     </section>
-    <section class="contenedor-contacto">
+    <section id="contactar" class="contenedor-contacto">
+       <div class="contenedor-titulo-contacto-p">
+        <h2 class="titulo-contacto-p">Contacto</h2>
+       </div>
         <div class="contenedor-form"> 
                 <div class="contenedor-titulo-contacto">
                        <h3 class="titulo-contacto">Formulario de contacto</h3>
@@ -190,7 +196,7 @@
     </section>
 </main> 
 <footer>
-    info
+   <h2>Footer</h2>
 </footer>
 <script src="/presentacion.js"></script>
 </body>
