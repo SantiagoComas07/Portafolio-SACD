@@ -163,6 +163,7 @@ z-index:1200;
 .contenedor-listas.visible{
 display: block;
 animation: aparecer 0.5s ease;
+text-align: end;
 }
 
  @keyframes aparecer {
@@ -244,7 +245,8 @@ margin-bottom:10px;
 width: 100%;
 height: 500px;
 display:flex;
-font-weight: bold;
+font-size: large;
+font-weight: 800;
 z-index:1000;
 }
 
@@ -365,10 +367,18 @@ box-shadow: 0px 5px 7px #010b1b;
     margin-top: 100px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     z-index:3000;
 
   }
 
+.contenido-textual-presentacion{
+    width: 90%;
+    padding: 20px;
+    padding-left: 40px;
+    z-index: 2000;
+
+}
 
 
 
@@ -475,7 +485,7 @@ line-height: 1.5em;
 
 }
 
-@media (max-width:950px){
+@media (max-width:750px){
 
 
 
@@ -487,9 +497,31 @@ line-height: 1.5em;
     }
 
     .datos{
+
         flex-direction: column;
         justify-content: center;
+        text-align: center;
         z-index:4000;
+
+    }
+
+
+    .listas-sobre_mi{
+
+        text-align: start;
+
+    }
+
+    .listas-sobre_mi li{
+
+        list-style:none;
+
+    }
+
+
+    .listas-habilidades-blandas{
+
+        list-style:none;
 
     }
 
@@ -542,6 +574,8 @@ align-items: center;
 
 .titulo-skills{
 
+  font-size: 30px;
+  margin-bottom: 40px;
 color:#010b1b;
 
 }
@@ -796,6 +830,7 @@ flex-direction: column;
 justify-content: center;  
 align-items: center;
 margin-bottom: 70px ;
+background-color: #eae9ed;   
 
 }
 
@@ -805,8 +840,8 @@ margin-bottom: 70px ;
     width:100%;
     text-align:center;
     padding: 0px 50px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
+    background-color: #eae9ed;
+   
 
 }
 
@@ -824,13 +859,14 @@ margin-bottom: 70px ;
 
 .contenedor-form{
 width: 30%;
-background-color: #eae9ed;
+background-color: rgb(16, 138, 226);
 border-radius: 10px;
 display:flex;
 flex-direction: column;
 align-items: center;
 margin:20px;
-box-shadow: 0px 5px 7px #00020d ;
+margin-bottom: 30px;
+box-shadow: 0px 5px 7px #00020d94 ;
 }
 
 
@@ -909,12 +945,12 @@ cursor:pointer;
 
 
 
-@media(max-width:790px){
+@media(max-width:500px){
 
 
     .contenedor-form{
 
-        width: 55%;
+        width: 70%;
         z-index: 900;
         
         
@@ -952,7 +988,7 @@ footer{
     max-width: 1200px;
     display: grid;
 grid-template-columns: repeat(3, 30%);
-grid-template-rows:  300px, 100px;
+grid-template-rows:  400px, 200px;
 justify-content: center;
 align-items:start;
 margin: 0 auto;
@@ -968,7 +1004,7 @@ padding: 10px;
 }
 
 
-.bl1{
+.b1{
 grid-column: 1/2;
 grid-row: 1/2;
 }
@@ -993,10 +1029,22 @@ text-align: center;
 
 display:flex;
 flex-direction: row;
+margin-top: 10px;
 gap:5px;
 
 }
 
+
+#red-footer{
+font-size: 20px;
+color: whitesmoke;
+z-index: 4000;
+}
+
+#red-footer:hover{
+
+ color:rgb(16, 138, 226)
+}
 
 
 @media(max-width:600px){
