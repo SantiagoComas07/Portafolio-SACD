@@ -285,7 +285,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-    
+    box-shadow: 0px 5px 7px #010b1b;
     }
 
     
@@ -296,13 +296,8 @@ width: 100%;
     }
     
 
-.logo:hover{
-background-color: #cbc8dcc7;
-box-shadow: 0px 5px 7px #010b1b;
-}
 
-
-.logo:hover .red{
+.red:hover{
     color:rgb(16, 138, 226);
 
 }
@@ -859,7 +854,7 @@ background-color: #eae9ed;
 
 .contenedor-form{
 width: 30%;
-background-color: rgb(16, 138, 226);
+background: linear-gradient(to right, #6f8aab, #2e5280 );
 border-radius: 10px;
 display:flex;
 flex-direction: column;
@@ -985,7 +980,7 @@ footer{
 
 .subcontenedor-footer{
     width:100%;
-    max-width: 1200px;
+    max-width: 1700px;
     display: grid;
 grid-template-columns: repeat(3, 30%);
 grid-template-rows:  400px, 200px;
